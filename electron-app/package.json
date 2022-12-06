@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "electron-app",
+  "version": "0.0.0",
+  "main": "src-gen/frontend/electron-main.js",
+  "dependencies": {
+    "@theia/core": "1.32.0",
+    "@theia/electron": "1.32.0",
+    "@theia/preferences": "1.32.0"
+  },
+  "devDependencies": {
+    "@theia/cli": "1.32.0",
+    "electron": "^15.5.7"
+  },
+  "scripts": {
+    "prepare": "pnpm build",
+    "build": "theia build --mode development",
+    "start": "theia start"
+  },
+  "theia": {
+    "target": "electron"
+  }
+}

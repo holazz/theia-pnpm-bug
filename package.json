@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.18.0",
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "prepare": "pnpm -r prepare",
+    "rebuild:browser": "theia rebuild:browser",
+    "rebuild:electron": "theia rebuild:electron",
+    "start:browser": "pnpm rebuild:browser && pnpm -C browser-app start",
+    "start:electron": "pnpm rebuild:electron && pnpm -C electron-app start"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
